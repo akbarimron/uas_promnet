@@ -16,12 +16,14 @@ class PageController extends Controller
             // Baca file JSON dari storage
             $jsonPath = storage_path('app/json/galleries.json');
             
+            //baca dan ubah file json menjadi array
             if (File::exists($jsonPath)) {
                 $json = File::get($jsonPath);
                 $galleries = json_decode($json, true);
                 
                 // Filter hanya yang active dan urutkan
                 $galleries = array_filter($galleries, function($item) {
+                    //ambil acive only
                     return $item['active'] === true;
                 });
                 

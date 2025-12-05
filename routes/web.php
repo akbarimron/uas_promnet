@@ -34,7 +34,7 @@ Route::get('/store', function () {
 
 //terms page
 Route::get('/terms', function () {   
-    return view('/page/terms');
+    return view('page.terms');
 })->name('terms');
 
 // Auth Routes
@@ -53,7 +53,7 @@ Route::middleware('auth')->group(function () {
 });
 
 // Admin Routes - Protected with admin middleware
-Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(function () {
+Route::middleware(['auth', 'admin:admin'])->prefix('admin')->name('admin.')->group(function () {
     // Admin Dashboard
     Route::get('/dashboard', function () {
         return view('dashboard.admin');

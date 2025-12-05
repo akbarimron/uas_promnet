@@ -79,7 +79,7 @@
 </head>
 <body class="bg-light">
 <header class="bg-secondary-custom shadow">
-    <nav class="navbar navbar-expand-xl navbar-dark">
+    <nav class="navbar navbar-expand-xl nav navbar-dark">
         <div class="container">
            <a class="nav-link text-light" href="{{ route('home') }}">
                 <img src="{{ asset('storage/img/logo.png') }}" alt="Logo" class="img-fluid" style="max-height:54px;width:auto;">

@@ -20,7 +20,7 @@ class CheckRole
         }
 
         if (auth()->user()->role !== $role) {
-            abort(403, 'Unauthorized access.');
+            return redirect('/login');
         }
 
         return $next($request);
