@@ -34,7 +34,7 @@ Route::get('/store', function () {
 
 //terms page
 Route::get('/terms', function () {   
-    return view('/page/terms');
+    return view('page.terms');
 })->name('terms');
 
 // Auth Routes

@@ -67,23 +67,6 @@
 
             <!-- Main Content -->
             <main class="col-md-10 ms-sm-auto px-md-4 py-4">
-                @if($errors->any())
-                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                        <strong><i class="fas fa-exclamation-circle me-2"></i>Error!</strong>
-                        @foreach($errors->all() as $error)
-                            <div>{{ $error }}</div>
-                        @endforeach
-                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                    </div>
-                @endif
-
-                @if(session('success'))
-                    <div class="alert alert-success alert-dismissible fade show" role="alert">
-                        <i class="fas fa-check-circle me-2"></i>{{ session('success') }}
-                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                    </div>
-                @endif
-
                 <div class="mb-4">
                     <h1 class="display-5 fw-bold">Admin Dashboard</h1>
                     <p class="text-muted">Selamat datang, {{ Auth::user()->nama }}</p>
