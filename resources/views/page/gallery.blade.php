@@ -32,7 +32,7 @@
         .shadow-custom { box-shadow: 0 10px 15px -3px rgba(0,0,0,.1); }
         header { position: sticky; top: 0; z-index: 50; }
         .hero-section {
-            background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url("{{ asset('storage/img/dummy.jpg') }}") center center / cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url("{{ asset('storage/img/landingpage/weightlose.png') }}") center center / cover no-repeat;
             color: #fff; min-height: 50vh; display: flex; align-items: center; position: relative;
         }
         .hero-content { position: relative; z-index: 2; }

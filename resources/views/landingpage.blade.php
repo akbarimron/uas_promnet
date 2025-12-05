@@ -129,6 +129,7 @@
     </nav>
 </header>
 <main>
+    {{-- Hero section --}}
     <section id="hero" class="hero-section">
         <div class="container hero-content">
             <div class="row">
@@ -144,6 +145,7 @@
             </div>
         </div>
     </section>
+    {{-- About Section --}}
     <section id="about" class="py-5 bg-white" data-aos="fade-up">
         <div class="container">
             <div class="row align-items-center g-5">
@@ -152,12 +154,15 @@
                     <p class="fs-5 text-muted mb-3">GYMUPI adalah fasilitas olahraga modern yang dirancang khusus untuk mahasiswa UPI. Kami menyediakan peralatan gym berkualitas tinggi dan lingkungan yang mendukung untuk mencapai tujuan kebugaran Anda.</p>
                     <p class="fs-5 text-muted mb-3">Dengan instruktur berpengalaman dan program latihan yang terstruktur, kami siap membantu Anda membangun gaya hidup sehat sambil menjalani kehidupan kampus yang produktif.</p>
                 </div>
-                <div class="col-lg-6">
-                    <img src="{{ asset('storage/img/landingpage/about.jpeg') }}" alt="Fasilitas" class="img-fluid rounded-3 shadow-custom">
-                </div>
+                 <div class=" col-lg-6 position-relative overflow-hidden" style="height:400px;     ">
+                            <img src="{{ asset('storage/img/landingpage/about.jpeg') }}" 
+                                 class="img-fluid w-100 h-100 goals-img rounded-4 " 
+                                 style="object-fit: cover;">
+                 </div>
             </div>
         </div>
     </section>
+    {{-- Pricing Section --}}
     <section id="pricing" class="py-5 gradient-red text-white" data-aos="fade-up">
         <div class="container">
             <div class="row align-items-center g-5">
@@ -173,6 +178,7 @@
             </div>
         </div>
     </section>
+    {{-- Trainer Section --}}
     <section id="trainer" class="py-5 bg-secondary-custom text-white" data-aos="fade-up">
         <div class="container">
             <div class="row align-items-center g-5">
@@ -219,6 +225,7 @@
             </div>
         </div>
     </section>
+    {{-- motivation section --}}
     <section id="health" class="py-5 text-center health-motivation" data-aos="fade-up">
         <div class="container content-wrapper">
             <h2 class="display-5 fw-bold mb-4">Tentukan Hidup Sehat</h2>
